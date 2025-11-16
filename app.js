@@ -35,8 +35,8 @@ async function main() {
 }
 
 app.set("view engine", "ejs");
-app.set("layout", "layouts/boilerplate");
 app.set("views", path.join(__dirname, "views"));
+app.set("layout", "layouts/boilerplate");
 app.use(express.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
